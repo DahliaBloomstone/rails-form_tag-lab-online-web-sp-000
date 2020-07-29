@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 class StudentsController < ApplicationController
 
   def index
@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.create(first_name: params[:first_name], last_name: params[:last_name])
-    binding.pry
+    #binding.pry
      redirect_to students_path(@student)
   end
 
